@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariano Díez Tobar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; }
+        body { background-color: #0d0d0d; margin: 0; padding: 40px 0; display: grid; gap: 60px; place-items: center; }
+        .slide-container {
+            width: 1280px; height: 720px; background-color: #fcfaf5; border: 15px solid #1a1a1a;
+            outline: 2px solid #c5a059; outline-offset: -25px; position: relative; overflow: hidden;
+            display: flex; flex-direction: column; padding: 70px 90px; font-family: 'Libre Baskerville', serif;
+            box-shadow: 0 40px 80px rgba(0,0,0,0.9);
+        }
+        .slide-number {
+            position: absolute; top: 45px; right: 45px; font-family: 'Cinzel', serif; font-size: 20px;
+            color: #c5a059; font-weight: bold; border: 1px solid #c5a059; padding: 5px 15px; background: #1a1a1a; z-index: 100;
+        }
+        .museum-corner { position: absolute; width: 120px; height: 120px; border: 1px solid #c5a059; pointer-events: none; }
+        .top-left { top: 40px; left: 40px; border-right: none; border-bottom: none; }
+        .bottom-right { bottom: 40px; right: 40px; border-left: none; border-top: none; }
+        .slide-title {
+            font-family: 'Cinzel', serif; font-size: 42px; color: #1a1a1a; border-bottom: 4px solid #c5a059;
+            padding-bottom: 12px; margin-bottom: 35px; text-transform: uppercase; letter-spacing: 3px; width: 100%;
+        }
+        .date-label {
+            background: #1a1a1a; color: #c5a059; display: inline-block; padding: 10px 30px;
+            font-family: 'Cinzel', serif; font-weight: bold; font-size: 26px; margin-bottom: 25px; box-shadow: 5px 5px 0px #c5a059;
+        }
+        .content-area { display: flex; gap: 60px; height: 100%; align-items: flex-start; }
+        .text-side { flex: 1.3; } .image-side { flex: 1; }
+        .image-frame {
+            width: 100%; height: 420px; background: #e5e5e5; border: 12px solid white;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; overflow: hidden;
+        }
+        .image-frame img { width: 100%; height: 100%; object-fit: cover; }
+        p { font-size: 22px; line-height: 1.6; color: #1a1a1a; margin-bottom: 20px; text-align: justify; }
+        strong { color: #8e6d31; }
+        .ai-caption { font-size: 14px; color: #666; text-align: center; margin-top: 10px; font-style: italic; }
+        .title-layout { text-align: center; justify-content: center; height: 100%; align-items: center; }
+        .title-layout h1 { font-family: 'Cinzel', serif; font-size: 75px; margin: 15px 0; color: #1a1a1a; }
+        .full-text-area { display: flex; flex-direction: column; justify-content: center; height: 100%; }
+    </style>
+</head>
+<body>
+
+<div class="slide-container title-layout">
+    <div class="slide-number">1</div>
+    <p class="tagline">Una vida de novela, una mente de película</p>
+    <h1>MARIANO DÍEZ TOBAR</h1>
+    <div class="date-label">1868 - 1926</div>
+    <div class="image-frame" style="max-width: 600px; height: 400px;"><img src="foto1.jpg"></div>
+</div>
+
+<div class="slide-container">
+    <div class="slide-number">2</div>
+    <h2 class="slide-title">La Cuna de Tardajos</h2>
+    <div class="content-area">
+        <div class="text-side">
+            <div class="date-label">21 de Mayo, 1868</div>
+            <p>Nace en <strong>Tardajos (Burgos)</strong> Mariano Díez Tobar. Hijo de Manuel Díez y Petra Tobar Tobar.</p>
+            <p>Fue un niño de inteligencia brillante desde sus primeros pasos, destacando muy pronto entre sus compañeros de juegos y escuela por su insaciable curiosidad.</p>
+        </div>
+        <div class="image-side"><div class="image-frame"><img src="foto2.jpg"></div></div>
+    </div>
+</div>
+
+<div class="slide-container">
+    <div class="slide-number">3</div>
+    <h2 class="slide-title">Andar el Camino del Saber</h2>
+    <div class="content-area">
+        <div class="image-side"><div class="image-frame"><img src="foto3.jpg"></div></div>
+        <div class="text-side">
+            <p><strong>Diez kilómetros diarios:</strong> Para formarse, el pequeño Mariano caminaba cada día la distancia entre <strong>Tardajos y Las Quintanillas</strong>.</p>
+            <p>Este esfuerzo físico bajo el clima castellano forjó un carácter de acero y una voluntad inquebrantable que definiría su carrera científica posterior.</p>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container">
+    <div class="slide-number">4</div>
+    <h2 class="slide-title">1882: Primeros Pasos Académicos</h2>
+    <div class="content-area">
+        <div class="text-side">
+            <p>Ingresa en el <strong>Seminario de Sigüenza</strong>. Aquí su genio comienza a brillar, sintiendo una inclinación especial e innata hacia las ciencias físicas y matemáticas.</p>
+            <p>Sus profesores advierten que su sabiduría es profunda y su método, aunque libre, es extraordinariamente eficaz.</p>
+        </div>
+        <div class="image-side"><div class="image-frame"><img src="foto4.jpg"></div></div>
+    </div>
+</div>
+
+<div class="slide-container">
+    <div class="slide-number">5</div>
+    <h2 class="slide-title">1886: Misionero de la Ciencia</h2>
+    <div class="content-area">
+        <div class="image-side"><div class="image-frame"><img src="foto5.jpg"></div></div>
+        <div class="text-side">
+            <p>Realiza sus votos en la congregación de los <strong>Misioneros Paúles</strong> en Madrid. Durante estos años aprovecha cada minuto para devorar textos científicos.</p>
+            <p>Es reconocido por poseer la erudición clásica de un sabio del Renacimiento, dominando disciplinas antiguas y modernas.</p>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container">
+    <div class="slide-number">6</div>
+    <h2 class="slide-title">1889: El Genio en la Cátedra</h2>
+    <div class="content-area">
+        <div class="text-side">
+            <p>Destinado como profesor de Ciencias al colegio de <strong>Murguía (Álava)</strong>. Su fama de sabio traspasa rápidamente los muros del colegio.</p>
+            <p>Catedráticos de institutos oficiales acuden a examinar a sus alumnos y terminan admirando y consultando al joven Padre Mariano.</p>
+        </div>
+        <div class="image-side"><div class="image-frame"><img src="foto6.jpg"></div></div>
+    </div>
+</div>
+
+<div class="slide-container">
+    <div class="slide-number">7</div>
+    <h2 class="slide-title">1892: El Cine es Burgalés</h2>
+    <div class="content-area">
+        <div class="image-side"><div class="image-frame"><img src="foto7.jpg"></div></div>
+        <div class="text-side">
+            <p>Mariano Díez Tobar pronuncia una conferencia describiendo el <strong>cinematógrafo</strong>, adelantándose tres años a la patente de los hermanos Lumière.</p>
+            <p>Describe con precisión técnica cómo las imágenes deben rotar para que la retina perciba el movimiento continuo.</p>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container">
+    <div class="slide-number">8</div>
+    <h2 class="slide-title">Generosidad Sin Límites</h2>
+    <div class="content-area">
+        <div class="text-side">
+            <p>Con un <strong>desinterés absoluto</strong>, Mariano autoriza a cualquier asistente o lector a llevar sus ideas a la práctica industrial.</p>
+            <p>No buscaba gloria ni dinero, sino que la humanidad pudiera disfrutar de los adelantos que su mente ya había visualizado.</p>
+        </div>
+        <div class="image-side"><div class="image-frame"><img src="foto8.jpg"></div></div>
+    </div>
+</div>
+
+<div class="slide-container">
+    <div class="slide-number">9</div>
+    <h2 class="slide-title">1893: El Vínculo con los Lumière</h2>
+    <div class="content-area">
+        <div class="image-side"><div class="image-frame"><img src="foto9.jpg"></div></div>
+        <div class="text-side">
+            <p>Se reúne en Bilbao con <strong>A. Flamegu</strong>, enviado de los hermanos Lumière. Con su anuencia y consentimiento, le entrega sus <strong>notas y apuntes técnicos</strong>.</p>
+            <p>En esos papeles se encontraba la solución al movimiento cronofotográfico que haría fortuna en Francia años después.</p>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container">
+    <div class="slide-number">10</div>
+    <h2 class="slide-title">1896: El Reconocimiento Francés</h2>
+    <div class="content-area">
+        <div class="text-side">
+            <p>Los Lumière le invitan personalmente a la primera proyección del cinematógrafo en Madrid como gesto de <strong>gratitud y reconocimiento</strong>.</p>
+            <p>Sin las notas de Mariano, el éxito técnico de los franceses hubiera sido, cuanto menos, mucho más lento.</p>
+        </div>
+        <div class="image-side"><div class="image-frame"><img src="foto10.jpg"></div></div>
+    </div>
+</div>
+
+<div class="slide-container">
+    <div class="slide-number">11</div>
+    <h2 class="slide-title">Misión: Enseñar</h2>
+    <div class="content-area">
+        <div class="image-side"><div class="image-frame"><img src="foto11.jpg"></div></div>
+        <div class="text-side">
+            <p>Mariano concibe sus inventos como <strong>instrumentos pedagógicos</strong>. Creía firmemente que el cine y la mecánica eran herramientas para enseñar mejor.</p>
+            <p>Toda su energía se volcaba en que sus alumnos entendieran la realidad de las cosas a través de la experimentación visual.</p>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container">
+    <div class="slide-number">12</div>
+    <h2 class="slide-title">1902: Un Museo del Conocimiento</h2>
+    <div class="content-area">
+        <div class="text-side">
+            <p>Es trasladado a <strong>Villafranca del Bierzo (León)</strong>. Allí funda el Museo de Historia Natural y un gabinete de Física referencial.</p>
+            <p>Su producción científica no se detiene, ideando máquinas que desafían la imaginación de la época.</p>
+        </div>
+        <div class="image-side"><div class="image-frame"><img src="foto12.jpg"></div></div>
+    </div>
+</div>
+
+<div class="slide-container">
+    <div class="slide-number">13</div>
+    <h2 class="slide-title">1905: Ingeniería de Sonido</h2>
+    <div class="content-area">
+        <div class="image-side">
+            <div class="image-frame"><img src="foto13.jpg"></div>
+            <p class="ai-caption">Imagen generada por inteligencia artificial</p>
+        </div>
+        <div class="text-side">
+            <p>Desarrolla un <strong>reloj de cuerda vocal</strong>: se cargaba mediante resonadores que captaban la energía de la voz humana.</p>
+            <p>Esta maravilla mecánica funcionó durante diez años ininterrumpidos en el colegio, asombrando a alumnos y visitantes.</p>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container">
+    <div class="slide-number">14</div>
+    <h2 class="slide-title">Energía del Movimiento Cotidiano</h2>
+    <div class="content-area">
+        <div class="text-side">
+            <p>Ideó e instaló un reloj que funcionaba con los <strong>pasos de la gente</strong> por el pasillo del colegio.</p>
+            <p>Aprovechaba la vibración y el peso de las pisadas para mantener el mecanismo activo. Un precursor del aprovechamiento energético cinético.</p>
+        </div>
+        <div class="image-side">
+            <div class="image-frame"><img src="foto14.jpg"></div>
+            <p class="ai-caption">Imagen generada por inteligencia artificial</p>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container">
+    <div class="slide-number">15</div>
+    <h2 class="slide-title">1912: El Dictado a Máquina</h2>
+    <div class="content-area">
+        <div class="image-side"><div class="image-frame"><img src="foto15.jpg"></div></div>
+        <div class="text-side">
+            <p>Presenta el <strong>Logautógrafo</strong>, un ingenio que imprimía directamente la palabra-sonido en el papel mediante resonadores.</p>
+            <p>La casa <strong>Hispano-Olivetti</strong> se interesó por esta patente para aplicarla a las máquinas de escribir de la época.</p>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container">
+    <div class="slide-number">16</div>
+    <h2 class="slide-title">El Iconoscopio</h2>
+    <div class="content-area">
+        <div class="text-side">
+            <p>Diseña el <strong>Iconoscopio o Iconotelescopio</strong>, un sistema para transmitir imágenes a distancia décadas antes de la televisión moderna.</p>
+            <p>Constaba de una cámara oscura con lámina de sulfuro de antimonio y un regulador sincrónico de alta precisión.</p>
+        </div>
+        <div class="image-side">
+            <div class="image-frame"><img src="foto16.jpg"></div>
+            <p class="ai-caption">Imagen generada por inteligencia artificial</p>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container">
+    <div class="slide-number">17</div>
+    <h2 class="slide-title">Cine Sonoro y Banda Sonora</h2>
+    <div class="content-area">
+        <div class="image-side">
+            <div class="image-frame"><img src="foto17.jpg"></div>
+            <p class="ai-caption">Imagen generada por inteligencia artificial</p>
+        </div>
+        <div class="text-side">
+            <p>Adelanta los principios del cine sonoro. Describe perfectamente la <strong>banda sonora</strong> como una marca gráfica en los fotogramas.</p>
+            <p>Su fin era coordinar la voz y el vídeo para que el realismo en el aula fuera absoluto.</p>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container">
+    <div class="slide-number">18</div>
+    <h2 class="slide-title">La Censura del Ego</h2>
+    <div class="content-area">
+        <div class="text-side">
+            <p>Sus superiores religiosos, en base a reglamentos antiguos, le impiden publicar y comunicar sus hallazgos al exterior.</p>
+            <p>Argumentaban que la fama "le subiría el ego". Mariano, en un acto de humildad extrema, acepta el <strong>silencio impuesto</strong>.</p>
+        </div>
+        <div class="image-side">
+            <div class="image-frame"><img src="foto18.jpg"></div>
+            <p class="ai-caption">Imagen generada por inteligencia artificial</p>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container">
+    <div class="slide-number">19</div>
+    <h2 class="slide-title">25 Julio 1926: El Adiós del Docente</h2>
+    <div class="full-text-area">
+        <p>Muere en Madrid tras sufrir fiebres altísimas. Se apaga el genio de Tardajos en el más absoluto <strong>anonimato científico</strong>. Su muerte no fue solo la pérdida de un científico, sino la desaparición de un <strong>docente excepcional</strong> que entendía la educación como un acto de revelación.</p>
+        <p>Como profesor, Mariano no buscaba la memorización, sino la comprensión mecánica y vital. Sus alumnos perdieron al hombre que convertía el aula en un laboratorio de asombro. Murió como vivió: en la humildad de su orden, dejando atrás una estela de conocimientos que solo sus discípulos más cercanos alcanzaron a vislumbrar antes de que el silencio institucional cubriera su nombre.</p>
+    </div>
+</div>
+
+<div class="slide-container">
+    <div class="slide-number">20</div>
+    <h2 class="slide-title">El Expolio de la Memoria</h2>
+    <div class="content-area">
+        <div class="text-side">
+            <p>Tras su muerte, ocurre la tragedia en Villafranca: sus propios compañeros <strong>reparten o queman</strong> su inmensa biblioteca y un cajón de apuntes.</p>
+            <p>Muchos de sus inventos inéditos se perdieron para siempre entre las cenizas de la incomprensión.</p>
+        </div>
+        <div class="image-side"><div class="image-frame"><img src="foto20.jpg"></div></div>
+    </div>
+</div>
+
+<div class="slide-container">
+    <div class="slide-number">21</div>
+    <h2 class="slide-title">Envidias y Olvido</h2>
+    <div class="content-area">
+        <div class="image-side"><div class="image-frame"><img src="foto21.jpg"></div></div>
+        <div class="text-side">
+            <p>Investigaciones modernas confirman que las <strong>envidias de colegas</strong> y reglamentos obsoletos enterraron su legado.</p>
+            <p>Se consideraba que un religioso no debía brillar más que sus superiores, silenciando una mente de clase mundial.</p>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container">
+    <div class="slide-number">22</div>
+    <h2 class="slide-title">Fray Eligio Rivas</h2>
+    <div class="content-area">
+        <div class="text-side">
+            <p>El director del museo de Baños de Molgas logra rescatar el <strong>prototipo original</strong> del cinematógrafo antes de su destrucción definitiva.</p>
+            <p>Es el comienzo de la restauración histórica de Mariano Díez Tobar en el siglo XX.</p>
+        </div>
+        <div class="image-side"><div class="image-frame"><img src="foto22.jpg"></div></div>
+    </div>
+</div>
+
+<div class="slide-container">
+    <div class="slide-number">23</div>
+    <h2 class="slide-title">Custodia del Legado</h2>
+    <div class="content-area">
+        <div class="image-side"><div class="image-frame"><img src="foto23.jpg"></div></div>
+        <div class="text-side">
+            <p>Hoy, sus máquinas supervivientes se conservan en el <strong>Santuario de Nuestra Señora de los Milagros</strong> (Baños de Molgas, Ourense).</p>
+            <p>Es el último refugio físico de su inmenso talento inventivo.</p>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container">
+    <div class="slide-number">24</div>
+    <h2 class="slide-title">2011: Real Academia Historia</h2>
+    <div class="content-area">
+        <div class="text-side">
+            <p>La <strong>Real Academia de la Historia</strong> incluye a Mariano en su Diccionario Biográfico en 2011, validando su figura de ilustre.</p>
+            <p>Se le reconoce oficialmente como "precursor creativo del cinematógrafo ya en 1889".</p>
+        </div>
+        <div class="image-side"><div class="image-frame"><img src="foto24.jpg"></div></div>
+    </div>
+</div>
+
+<div class="slide-container">
+    <div class="slide-number">25</div>
+    <h2 class="slide-title">Investigación Histórica</h2>
+    <div class="content-area">
+        <div class="image-side"><div class="image-frame"><img src="foto27.jpg"></div></div>
+        <div class="text-side">
+            <p><strong>Víctor Rodríguez Herrero</strong> es un destacado investigador que ha dedicado gran parte de su labor a rescatar la figura de Mariano Díez Tobar del olvido.</p>
+            <p>Como autor y experto, Herrero ha documentado meticulosamente la primacía de los inventos de Mariano, analizando los vínculos técnicos con los Lumière y promoviendo el reconocimiento de su genio en la historia universal del cine.</p>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container">
+    <div class="slide-number">26</div>
+    <h2 class="slide-title">Febrero 2026: El Debate</h2>
+    <div class="content-area">
+        <div class="text-side">
+            <p>El 9 de febrero de 2026, el diario <strong>El Debate</strong> titula tajante: "Mariano realmente inventó el cine, no los franceses".</p>
+            <p>La prensa nacional reivindica su primacía mundial definitiva.</p>
+        </div>
+        <div class="image-side"><div class="image-frame"><img src="foto28.jpg"></div></div>
+    </div>
+</div>
+
+<div class="slide-container">
+    <div class="slide-number">27</div>
+    <h2 class="slide-title">Leonardo da Vinci Burgalés</h2>
+    <div class="content-area">
+        <div class="image-side"><div class="image-frame"><img src="foto29.jpg"></div></div>
+        <div class="text-side">
+            <p>Tocó todas las ramas: física, mecánica, biología, música. Era capaz de ver la armonía científica en cualquier rincón del saber.</p>
+            <p>Un hombre que vivió para la verdad científica y la formación de sus alumnos.</p>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container title-layout">
+    <div class="slide-number">28</div>
+    <div class="museum-corner top-left"></div>
+    <div class="museum-corner bottom-right"></div>
+    <div class="image-frame" style="max-width: 600px; height: 350px;"><img src="foto30.jpg"></div>
+    <p style="text-align: center; font-size: 32px; margin-top: 30px;">"La palabra es el sonido donde se encarna la idea"</p>
+    <p style="font-weight: bold; color: #c5a059; text-transform: uppercase;">MARIANO DÍEZ TOBAR</p>
+</div>
+
+</body>
+</html>
